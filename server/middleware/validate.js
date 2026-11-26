@@ -12,6 +12,13 @@ export const validate =
       }));
       return next(new ApiError(400, 'Validation failed', details));
     }
-    req[source] = result.data;
+
+    // Express 5 makes req.query read-only, so define it explicitly.
+    Object.defineProperty(req, source, {
+      value: result.data,
+      writable: true,
+      configurable: true,
+      enumerable: true,
+    });
     next();
   };
