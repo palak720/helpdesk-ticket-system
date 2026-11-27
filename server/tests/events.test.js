@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { eventBus, emitEvent, EVENTS } from '../src/events/eventBus.js';
+import { eventBus, emitEvent, EVENTS } from '../events/eventBus.js';
 
 test('emitted events reach subscribers with their payload', () => {
   let received;

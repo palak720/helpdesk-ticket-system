@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 process.env.NODE_ENV = 'test';
 process.env.JWT_SECRET = 'test-secret';
 
-const { default: app } = await import('../src/app.js');
+const { default: app } = await import('../app.js');
 let server;
 let base;
 

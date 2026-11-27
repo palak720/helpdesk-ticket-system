@@ -5,7 +5,7 @@ import {
   createTicketSchema,
   updateTicketSchema,
   listTicketsQuery,
-} from '../src/validators/schemas.js';
+} from '../validators/schemas.js';
 
 test('register rejects weak passwords and normalises email', () => {
   assert.equal(registerSchema.safeParse({ name: 'Ab', email: 'a@b.com', password: 'short' }).success, false);
