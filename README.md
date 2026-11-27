@@ -3,8 +3,8 @@
 A mini helpdesk where users raise support tickets and admins manage and resolve them.
 Built with **Node.js, Express, MongoDB (Mongoose), JWT** on the backend and **React (Vite)** on the frontend.
 
-- Live app: `<add your frontend link>`
-- Live API: `<add your backend link>/api/health`
+- Live app: `<https://helpdesk-ticket-system-palak.vercel.app>`
+- Live API: `<https://helpdesk-ticket-system-sgu0.onrender.com/>/api/health`
 
 ## Features
 
